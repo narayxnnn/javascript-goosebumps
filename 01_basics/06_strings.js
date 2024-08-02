@@ -13,4 +13,4 @@ console.log(fullName[0]);
 console.log(fullName.length);
 console.log(fullName.toUpperCase());
 
-// same .substring amd .slice we have to divide string into more parta
+// same .substring(a,b) amd .slice(a,b) we have to divide string into more parta
