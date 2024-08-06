@@ -40,3 +40,6 @@ myCoding.forEach( (item) => {
     
     console.log(item.languageName);
 } )
+
+
+// for each loop can only print 
