@@ -30,6 +30,7 @@ buttons.forEach(function (button){
 
 })
 
+```
 
 ## project-2
 
@@ -55,3 +56,24 @@ event.preventDefault(); // iska kya kaam hai janna hai
 
   }
 })
+
+```
+
+##project-3
+
+
+const clock = document.getElementById('clock')
+// console.log(clock)
+
+
+
+//let date = new Date();
+// let time = Math.round(date.getTime(toLocaleString(undefined, {timeZone: 'Asia/Kolkata'}))); iska koi matlab nahi hai
+// console.log(time)
+
+// console.log(date.toLocaleTimeString()) i can use that but har bar refresh karna padega time dekhne ke liye
+
+setInterval(function(){
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
