@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // here we are learning about setTimeOut and setIntervel
+    let sayHii =  function () {
+        console.log('hey!')
+         }
+    // const stopHii = setTimeout(sayHii, 3000)
+
+    // now for stopping this settimeout we use cleartimeout if needed
+    // clearTimeout(stopHii)
+    // console.log(alert('stopped'));
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'PLEASE KEEP SILENCE!'
+    }
+   const stopText = setTimeout(changeText, 3000)
+   
+   document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(stopText);
+    console.log('stopped')
+   })
+    
+   
+</script>
+</html>
