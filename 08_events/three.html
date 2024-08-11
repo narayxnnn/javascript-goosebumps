@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // here we will learn about setinterval in this event will repeat itselt after a set time
+    const typeHii = function(str){
+        console.log(str, Date.now())
+    }
+  //const stopInterval =  setInterval(typeHii, 2000, "hey cheeti!");
+    
+  // clearInterval(stopInterval)
+   document.querySelector('#start').addEventListener('click', function(){
+    const stopIt = setInterval(typeHii, 1000, "hey cheeti!");
+    document.querySelector('#stop').addEventListener('click', function(){
+      clearInterval(stopIt);
+   })
+   })
+
+   
+
+
+</script>
+</html>
