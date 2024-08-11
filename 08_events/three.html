@@ -15,17 +15,16 @@
     const typeHii = function(str){
         console.log(str, Date.now())
     }
-  //const stopInterval =  setInterval(typeHii, 2000, "hey cheeti!");
+  let stopInterval;  // =  setInterval(typeHii, 2000, "hey cheeti!");
     
   // clearInterval(stopInterval)
    document.querySelector('#start').addEventListener('click', function(){
-    const stopIt = setInterval(typeHii, 1000, "hey cheeti!");
-    document.querySelector('#stop').addEventListener('click', function(){
-      clearInterval(stopIt);
-   })
+   stopInterval = setInterval(typeHii, 1000, "hey cheeti!");
    })
 
-   
+   document.querySelector('#stop').addEventListener('click', function(){
+      clearInterval(stopInterval);
+   })
 
 
 </script>
