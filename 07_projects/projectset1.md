@@ -77,3 +77,38 @@ setInterval(function(){
   let date = new Date();
   clock.innerHTML = date.toLocaleTimeString();
 }, 1000)
+
+
+
+```
+## project-6
+//generate random colour this could be done by using hex code
+
+// console.log()
+
+const randomColour = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let clickButton;
+// console.log(randomColour());
+const startChangingColor = function(){
+  const changeColor = function() {document.body.style.backgroundColor = randomColour();
+  }
+ clickButton = setInterval(changeColor, 1000);
+ // we need to write method in this interwal means a fuction 
+ 
+}
+
+const stopChangingColor = function(){
+  //document.body.style.backgroundColor = randomColour();
+  clearInterval(clickButton);
+}
+
+document.querySelector('#start').addEventListener('click', startChangingColor)
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor)
