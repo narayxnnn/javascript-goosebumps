@@ -96,6 +96,7 @@ const randomColour = function () {
 };
 let clickButton;
 // console.log(randomColour());
+// yaha if lagakar pahle click button hai ki ni hai check ye ek acchi cheej hai
 const startChangingColor = function(){
   const changeColor = function() {document.body.style.backgroundColor = randomColour();
   }
